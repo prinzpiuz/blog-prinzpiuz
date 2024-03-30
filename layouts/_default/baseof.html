@@ -7,28 +7,31 @@
       <div class="container">{{- block "main" . }}{{- end }}</div>
     </div>
     {{ if .Params.asciinema }}
-    <link
-    rel="stylesheet"
-    type="text/css"
-    href="{{ .Site.BaseURL }}css/asciinema-player.css"
-    />
-    <script src="{{ .Site.BaseURL }}js/asciinema-player.js"></script>
+      <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ .Site.BaseURL }}css/asciinema-player.css"
+      />
+      <script src="{{ .Site.BaseURL }}js/asciinema-player.js"></script>
     {{ end }}
     {{ if .Params.clappy }}
-    <link
-    rel="stylesheet"
-    type="text/css"
-    href="{{ .Site.BaseURL }}css/clappy.css"
-    />
-    <script src="{{ .Site.BaseURL }}js/clappy.js"></script>
+      <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ .Site.BaseURL }}css/clappy.css"
+      />
+      <script src="{{ .Site.BaseURL }}js/clappy.js"></script>
     {{ end }}
     {{ if .Params.audio }}
-    <link
-    rel="stylesheet"
-    type="text/css"
-    href="{{ .Site.BaseURL }}css/audio.css"
-    />
-    <script src="{{ .Site.BaseURL }}js/audio.js"></script>
+      <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ .Site.BaseURL }}css/audio.css"
+      />
+      <script src="{{ .Site.BaseURL }}js/audio.js"></script>
+    {{ end }}
+    {{ if in .Permalink "reviews" }}
+      <script src="{{ .Site.BaseURL }}js/rating.js"></script>
     {{ end }}
     {{- partial "footer.html" . -}}
   </body>
