@@ -16454,3 +16454,16 @@ a {
     float: none;
   }
 }
+
+#review_image {
+  float: left;
+  margin-right: 10px;
+}
+
+.checked {
+  color: orange;
+}
+
+.rating{
+  display: inline;
+}
