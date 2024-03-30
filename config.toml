@@ -34,7 +34,7 @@ copyright = "&copy; Copyright 2024, prinzpiuz"
 
 # Configuration Features
 [params]
-  version="1.12.0"
+  version="1.13.0"
   opengraph_io_api_key = "65b682c0-f713-473b-b75a-30e7eda27791"
   header_title = "PrinzPiuz"
   header_subtitle = "Software Engineer | Ziff Davis | Cochin" # Your header subtitle

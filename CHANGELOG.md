@@ -1,12 +1,17 @@
 # Changelog
 
-## [1.12.0] - 2024-03-28
+## [1.13.0] - 2024-03-30
 
 ### ⛰️  Features
 
 - *(footer)* Not by AI added at footer - ([164922d](https://github.com/orhun/git-cliff/commit/164922dcb26fc359266fb4e8c7c4a07cebd6490b))
 - *(footer)* Showing version on footer - ([061e0f3](https://github.com/orhun/git-cliff/commit/061e0f37e801c102c9f94cac7537ea10534b4f82))
 - *(head)* Removed google analytics and introduced opensource analytics called goat counter - ([b706c82](https://github.com/orhun/git-cliff/commit/b706c82c59e10dcc4f94b97be80725e6f52ea4a2))
+- *(review)* Rating feature added - ([1406c8c](https://github.com/orhun/git-cliff/commit/1406c8c06c792ba7b964a4abe4a1d4b824e3d5e6))
+- *(review)* Final draft of aadujeevitham review - ([72909be](https://github.com/orhun/git-cliff/commit/72909be3a0e494c769c6435772b60207c605570b))
+- *(reviews)* Modified layout for writing film reviews (#46) - ([6b2d443](https://github.com/orhun/git-cliff/commit/6b2d44317bc0c45b3553b2c995a3d0c86191e8c4))
+- *(reviews)* Audio wave animation in post - ([5c19530](https://github.com/orhun/git-cliff/commit/5c1953048a1dfb6ad3b7f30887d6d4eb81e118f1))
+- *(reviews)* Modified layout for writing film reviews - ([e7d857d](https://github.com/orhun/git-cliff/commit/e7d857d66d7390db6d3453604987ef2e9cca7ed7))
 
 ### 🐛 Bug Fixes
 
@@ -32,6 +37,7 @@
 - *(action)* Bug in deploy action fixed - ([8bdcbf0](https://github.com/orhun/git-cliff/commit/8bdcbf07a78f4fd27950c6219aab551f69bfd3ac))
 - *(action)* Bug in github action fixed - ([3daeeda](https://github.com/orhun/git-cliff/commit/3daeeda786e01b4ca2255abce107bf163f2c5645))
 - *(action)* Bug in action file fixed - ([957ad13](https://github.com/orhun/git-cliff/commit/957ad137482275d3a456ff4719270e60a5427760))
+- *(generated)* Changelog generated & version updated automatically - ([24b67bb](https://github.com/orhun/git-cliff/commit/24b67bb3088c12c6933bc3485242c32e2a72b181))
 - *(generated)* Changelog generated & version updated automatically - ([f5f3f20](https://github.com/orhun/git-cliff/commit/f5f3f200c9f906f1a2ef6b7ab08af29ab7917a16))
 - *(generated)* Changelog generated & version updated automatically - ([93e13d2](https://github.com/orhun/git-cliff/commit/93e13d22e0bb4c9e4f1a1c23311b88ae64b9b177))
 - *(generated)* Changelog generated & version updated automatically - ([8323300](https://github.com/orhun/git-cliff/commit/8323300c3712a3416250c0f67d929d18b5909403))
