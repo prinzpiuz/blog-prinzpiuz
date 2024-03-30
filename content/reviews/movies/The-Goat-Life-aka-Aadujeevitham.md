@@ -9,7 +9,7 @@ audio: true
 
 {{< audio "Aadujeevitham.mp3" >}}
 
-{{< review_image src="/images/reviews/movies/goat_life.jpg" width=180 rating="4.9" alt="The Goat Life" class="review_image" >}}
+{{< review_image src="/images/reviews/movies/goat_life.jpg" width=180 rating="5" alt="The Goat Life" class="review_image" >}}
 
 This is my first movie review. After watching this film, I felt compelled to share my thoughts. This cinema surpasses the standards of not only Malayalam but Indian cinema as well.  
 
