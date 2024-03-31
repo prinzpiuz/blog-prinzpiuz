@@ -1,0 +1,19 @@
+<figure id="review_image"  {{ with .Get "class" }} class="{{ . }}"{{ end }}>
+  {{- $u := urls.Parse (.Get "src") -}}
+  {{- $src := $u.String -}}
+  <img src="{{ $src }}"
+    {{- if or (.Get "alt") }}
+    alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ end }}"
+    {{- end -}}
+    {{- with .Get "width" }} width="{{ . }}"{{ end -}}
+    {{- with .Get "height" }} height="{{ . }}"{{ end -}}
+    {{- with .Get "loading" }} loading="{{ . }}"{{ end -}}
+  ><!-- Closing img tag -->
+  {{- if (.Get "rating") -}}
+    <figcaption>
+      {{- if or (.Get "rating") -}}
+      {{ partial "rating.html" . }}
+      {{- end }}
+    </figcaption>
+  {{- end }}
+</figure>
