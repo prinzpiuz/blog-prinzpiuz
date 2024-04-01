@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.13.0] - 2024-03-30
+## [1.15.0] - 2024-04-01
 
 ### ⛰️  Features
 
@@ -37,6 +37,12 @@
 - *(action)* Bug in deploy action fixed - ([8bdcbf0](https://github.com/orhun/git-cliff/commit/8bdcbf07a78f4fd27950c6219aab551f69bfd3ac))
 - *(action)* Bug in github action fixed - ([3daeeda](https://github.com/orhun/git-cliff/commit/3daeeda786e01b4ca2255abce107bf163f2c5645))
 - *(action)* Bug in action file fixed - ([957ad13](https://github.com/orhun/git-cliff/commit/957ad137482275d3a456ff4719270e60a5427760))
+- *(content correction)* Corrections (#49) - ([f5ef52d](https://github.com/orhun/git-cliff/commit/f5ef52dce9ad13af3c92922e6601d4e2ac258187))
+- *(content correction)* Corrections - ([9fc1931](https://github.com/orhun/git-cliff/commit/9fc19313d9d191b651187768193ff79a48883188))
+- *(content correction)* Corrections in latest post, broken link fixes (#48) - ([ae41791](https://github.com/orhun/git-cliff/commit/ae417912447ce2e8567aba1eb6bfc8f2cca1bb47))
+- *(content correction)* Corrections in latest post, broken link fixes - ([e16ed54](https://github.com/orhun/git-cliff/commit/e16ed54473ecf00e9b42f0157f476b18282e6072))
+- *(generated)* Changelog generated & version updated automatically - ([6f1ae06](https://github.com/orhun/git-cliff/commit/6f1ae0630f1a2913c2f1dc096e1dba3cc8c2cf16))
+- *(generated)* Changelog generated & version updated automatically - ([4da3b12](https://github.com/orhun/git-cliff/commit/4da3b127f7b95680e45ff503e57ee3a552611f03))
 - *(generated)* Changelog generated & version updated automatically - ([24b67bb](https://github.com/orhun/git-cliff/commit/24b67bb3088c12c6933bc3485242c32e2a72b181))
 - *(generated)* Changelog generated & version updated automatically - ([f5f3f20](https://github.com/orhun/git-cliff/commit/f5f3f200c9f906f1a2ef6b7ab08af29ab7917a16))
 - *(generated)* Changelog generated & version updated automatically - ([93e13d2](https://github.com/orhun/git-cliff/commit/93e13d22e0bb4c9e4f1a1c23311b88ae64b9b177))
