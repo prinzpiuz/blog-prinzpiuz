@@ -1,12 +1,14 @@
 # Changelog
 
-## [1.15.0] - 2024-04-01
+## [1.16.0] - 2024-04-22
 
 ### ⛰️  Features
 
 - *(footer)* Not by AI added at footer - ([164922d](https://github.com/orhun/git-cliff/commit/164922dcb26fc359266fb4e8c7c4a07cebd6490b))
 - *(footer)* Showing version on footer - ([061e0f3](https://github.com/orhun/git-cliff/commit/061e0f37e801c102c9f94cac7537ea10534b4f82))
 - *(head)* Removed google analytics and introduced opensource analytics called goat counter - ([b706c82](https://github.com/orhun/git-cliff/commit/b706c82c59e10dcc4f94b97be80725e6f52ea4a2))
+- *(review)* Aavesham movie review (#51) - ([a442653](https://github.com/orhun/git-cliff/commit/a44265308efe4a040138cdf5b9c725fae6a4bc11))
+- *(review)* Aavesham movie review - ([24cccdf](https://github.com/orhun/git-cliff/commit/24cccdfcd84767497997645bd5a496711dd3306e))
 - *(review)* Rating feature added - ([1406c8c](https://github.com/orhun/git-cliff/commit/1406c8c06c792ba7b964a4abe4a1d4b824e3d5e6))
 - *(review)* Final draft of aadujeevitham review - ([72909be](https://github.com/orhun/git-cliff/commit/72909be3a0e494c769c6435772b60207c605570b))
 - *(reviews)* Modified layout for writing film reviews (#46) - ([6b2d443](https://github.com/orhun/git-cliff/commit/6b2d44317bc0c45b3553b2c995a3d0c86191e8c4))
@@ -41,6 +43,7 @@
 - *(content correction)* Corrections - ([9fc1931](https://github.com/orhun/git-cliff/commit/9fc19313d9d191b651187768193ff79a48883188))
 - *(content correction)* Corrections in latest post, broken link fixes (#48) - ([ae41791](https://github.com/orhun/git-cliff/commit/ae417912447ce2e8567aba1eb6bfc8f2cca1bb47))
 - *(content correction)* Corrections in latest post, broken link fixes - ([e16ed54](https://github.com/orhun/git-cliff/commit/e16ed54473ecf00e9b42f0157f476b18282e6072))
+- *(generated)* Changelog generated & version updated automatically - ([09292f1](https://github.com/orhun/git-cliff/commit/09292f135f85121f1996a9ef34ee5978ac775178))
 - *(generated)* Changelog generated & version updated automatically - ([6f1ae06](https://github.com/orhun/git-cliff/commit/6f1ae0630f1a2913c2f1dc096e1dba3cc8c2cf16))
 - *(generated)* Changelog generated & version updated automatically - ([4da3b12](https://github.com/orhun/git-cliff/commit/4da3b127f7b95680e45ff503e57ee3a552611f03))
 - *(generated)* Changelog generated & version updated automatically - ([24b67bb](https://github.com/orhun/git-cliff/commit/24b67bb3088c12c6933bc3485242c32e2a72b181))
