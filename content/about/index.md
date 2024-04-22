@@ -20,7 +20,7 @@ also, I'll be watching movies/tv-shows in my free time.
 
 #### Contact Me
 
-Currently, I'm living in Varapuzha🏝️ | Kochi | Kerala | India
+Currently, I'm living in [Varapuzha🏝️](https://en.wikipedia.org/wiki/Varappuzha) | [Kochi](https://en.wikipedia.org/wiki/Ernakulam_district) | [Kerala](https://en.wikipedia.org/wiki/Kerala) | [India](https://en.wikipedia.org/wiki/India)
 
 #### Resume
 
