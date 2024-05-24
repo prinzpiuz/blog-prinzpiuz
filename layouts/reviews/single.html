@@ -7,8 +7,8 @@
             {{ end }}
             <small class="text-muted">Published {{ .Date.Format "January 2, 2006"  }}</small>
             {{ partial "reading-time.html" . }}
-            {{ if .Params.clappy }}
-                {{ partial "clappy_count.html" . }}
+            {{ if .Params.blotils }}
+                {{ partial "blotils_count.html" . }}
             {{ end }}
             {{ if .Params.audio }}
                 {{ partial "audio_button.html" . }}
@@ -17,8 +17,8 @@
         <article>
             {{ .Content }}
         </article>
-        {{ if .Params.clappy }}
-        {{ partial "clappy.html" . }}
+        {{ if .Params.blotils }}
+        {{ partial "blotils.html" . }}
         {{ end }}
     </div>
 {{ end }}
