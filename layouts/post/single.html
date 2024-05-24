@@ -7,16 +7,16 @@
             {{ end }}
             <small class="text-muted">Published {{ .Date.Format "January 2, 2006"  }}</small>
             {{ partial "reading-time.html" . }}
-            {{ if .Params.clappy }}
-            {{ partial "clappy_count.html" . }}
+            {{ if .Params.bloTils_like }}
+            {{ partial "blotils_count.html" . }}
             {{ end }}
         </div>
 
         <article>
             {{ .Content }}
         </article>
-        {{ if .Params.clappy }}
-        {{ partial "clappy.html" . }}
+        {{ if .Params.bloTils_like }}
+        {{ partial "blotils.html" . }}
         {{ end }}
     </div>
 {{ end }}

@@ -1,40 +1,40 @@
-.clappy_count_icon {
+.blotils_count_icon {
     width: 1em;
     height: 1em;
     vertical-align: -0.125em;
   }
 
-  .clappy_icon {
+  .blotils_icon {
     width: 1em;
     height: 1em;
     vertical-align: -0.125em;
     font-size: xxx-large;
   }
 
-  #clappy {
+  #blotils {
     text-align: center;
   }
 
-  #clappy_count {
+  #blotils_count {
     padding-left: 5px
   }
 
-  .clappy_button {
+  .blotils_button {
     border: none;
     outline: none;
     background: none;
   }
 
-  .clappy_button,
-  .clappy_button:focus,
-  .clappy_button:active {
+  .blotils_button,
+  .blotils_button:focus,
+  .blotils_button:active {
     border: 0px;
     background: none;
     outline: none;
     padding: 0;
   }
 
-  .clappy_icon:hover {
+  .blotils_icon:hover {
     animation: Shake 0.5s linear infinite;
 }
 

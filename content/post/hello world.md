@@ -3,6 +3,7 @@ title: "Hello world..!"
 date: 2020-05-24T00:59:10+05:30
 draft: false
 categories: ["helloworld"]
+bloTils_like: true
 ---
 
 {{< figure src="/images/hello-world/welcome.gif" height=150 width=150 class="figure_center" >}}
