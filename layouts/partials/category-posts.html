@@ -6,19 +6,17 @@
       </h5>
       <div class="pb-3">
         <ul class="list-unstyled">
-          {{ range .Site.RegularPages }} {{if not (in .Title "About")}}
+          {{ range .Site.RegularPages }}
+          {{ if not (in .Permalink "reviews") }}
+          {{if not (in .Title "About")}}
           <li>
             {{ .Date.Format "Jan-02-06" }}
-            {{ if in .Permalink "movies" }}
-                🎥 Review:
-            {{ end }}
-            {{ if in .Permalink "books" }}
-                📚 Review:
-            {{ end }}
             <a href="{{ .Permalink }}">{{ .Title }}</a>
             {{ partial "reading-time.html" . }}
           </li>
-          {{ end }} {{ end }}
+          {{ end }}
+          {{ end }}
+          {{ end }}
         </ul>
       </div>
     </div>
