@@ -40,3 +40,4 @@ Nuventure
 DIYs
 tv-shows
 Pixelfed
+Tridz
