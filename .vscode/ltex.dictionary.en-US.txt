@@ -41,3 +41,5 @@ DIYs
 tv-shows
 Pixelfed
 Tridz
+@wesbos
+@prinzpiuz

@@ -34,6 +34,7 @@
     "jellyfin",
     "Khadiri",
     "Khafil",
+    "Lastmod",
     "Lidarr",
     "markdownify",
     "Mohanan",
@@ -71,10 +72,34 @@
     "Talib",
     "Tils",
     "Varapuzha",
+    "wesbos",
     "Ziff"
   ],
   "cSpell.enableFiletypes": [
     "django-html"
   ],
-  "svg.preview.background": "white"
+  "svg.preview.background": "white",
+  "sqltools.useNodeRuntime": true,
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "database": "/home/prinzpiuz/projects/hobby/BloTils/BloTils.db",
+      "name": "BloTils"
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "ipvanish-provisioning-dev.cvna0gqmxbji.us-east-1.rds.amazonaws.com",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "IPV dev",
+      "database": "ecomaccounting",
+      "username": "vpnuser",
+      "password": "ipV@n1sh2024Q2"
+    }
+  ]
 }
