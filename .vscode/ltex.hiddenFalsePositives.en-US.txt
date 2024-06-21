@@ -24,3 +24,4 @@
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRadarr as a coordinator downloading Movies\\E$"}
 {"rule":"LC_AFTER_PERIOD","sentence":"^\\QThis page is inspired by @wesbos' uses.tech page.\\E$"}
 {"rule":"LC_AFTER_PERIOD","sentence":"^\\QThis page is inspired by @wesbos', uses.tech page.\\E$"}
+{"rule":"LC_AFTER_PERIOD","sentence":"^\\QThis page is inspired from @wesbos', uses.tech page.\\E$"}

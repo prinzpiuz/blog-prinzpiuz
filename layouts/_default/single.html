@@ -1,3 +1,31 @@
 {{ define "main" }}
-<div class="pl-sm-4 ml-sm-5">{{ .Content }}</div>
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0">{{ .Title }}</h3>
+            {{ if .Params.Subtitle }}
+                <h5>{{ .Params.Subtitle }}</h5>
+            {{ end }}
+            <small class="text-muted">Published {{ .Date.Format "January 2, 2006"  }}</small>
+            {{ partial "reading-time.html" . }}
+            {{ if .Params.clappy }}
+                {{ partial "clappy_count.html" . }}
+            {{ end }}
+            {{ if .Params.modified_date }}
+                </br><small class="text-muted">This page was last modified on {{ .Lastmod | time.Format ":date_medium" }}</small>
+            {{ end }}
+        </div>
+        <article>
+            {{ .Content }}
+            {{ if .Params.changelog }}
+                <hr>
+                <b>Changelog</b></br>
+                {{ with .GitInfo }}
+                    {{ .CommitDate.Format "2006-01-02" }}: {{ .Subject }}
+                {{ end }}
+            {{ end }}
+        </article>
+        {{ if .Params.clappy }}
+        {{ partial "clappy.html" . }}
+        {{ end }}
+    </div>
 {{ end }}

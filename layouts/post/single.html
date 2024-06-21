@@ -11,12 +11,8 @@
             {{ partial "clappy_count.html" . }}
             {{ end }}
         </div>
-
         <article>
             {{ .Content }}
-            {{ if .Params.modified_date }}
-                {{ .Lastmod | time.Format ":date_medium" }}
-            {{ end }}
         </article>
         {{ if .Params.clappy }}
         {{ partial "clappy.html" . }}
