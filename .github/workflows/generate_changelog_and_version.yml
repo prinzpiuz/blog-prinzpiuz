@@ -16,7 +16,7 @@ jobs:
         id: autoversion
         uses: ietf-tools/semver-action@v1
         with:
-          token: ${{ secrets.PERSONAL_TOKEN}}
+          token: ${{ secrets.PERSONAL_TOKEN }}
           branch: main
           skipInvalidTags: true
     outputs:
