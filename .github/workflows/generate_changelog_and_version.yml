@@ -20,6 +20,7 @@ jobs:
           WITH_V: false
           DRY_RUN: false
           INITIAL_VERSION: 1.0.0
+          DEFAULT_BUMP: patch
     outputs:
       new_tag: ${{ steps.autoversion.outputs.new_tag }}
   commit_changelog_and_version:
