@@ -35,7 +35,7 @@ copyright = "&copy; Copyright 2024, prinzpiuz"
 
 # Configuration Features
 [params]
-  version=""
+  version="0.0.1-staging.0"
   opengraph_io_api_key = "65b682c0-f713-473b-b75a-30e7eda27791"
   header_title = "PrinzPiuz"
   header_subtitle = "Software Engineer | Nuventure | Cochin"
