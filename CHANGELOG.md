@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.0.1-staging.0] - 2024-06-24
+## [1.16.1] - 2024-06-24
 
 ### ⛰️  Features
 
@@ -52,6 +52,7 @@
 - *(content correction)* Corrections - ([9fc1931](https://github.com/orhun/git-cliff/commit/9fc19313d9d191b651187768193ff79a48883188))
 - *(content correction)* Corrections in latest post, broken link fixes (#48) - ([ae41791](https://github.com/orhun/git-cliff/commit/ae417912447ce2e8567aba1eb6bfc8f2cca1bb47))
 - *(content correction)* Corrections in latest post, broken link fixes - ([e16ed54](https://github.com/orhun/git-cliff/commit/e16ed54473ecf00e9b42f0157f476b18282e6072))
+- *(generated)* Changelog generated & version updated automatically - ([1046f3f](https://github.com/orhun/git-cliff/commit/1046f3ff35f0f242d63839a9813b4d9421a8ea8e))
 - *(generated)* Changelog generated & version updated automatically - ([0857fdc](https://github.com/orhun/git-cliff/commit/0857fdc41fc776d0ec3c8f751da4af40eb3e6a6b))
 - *(generated)* Changelog generated & version updated automatically - ([2c28de3](https://github.com/orhun/git-cliff/commit/2c28de39f6107647a6e140b10a155f8106397a52))
 - *(generated)* Changelog generated & version updated automatically - ([09292f1](https://github.com/orhun/git-cliff/commit/09292f135f85121f1996a9ef34ee5978ac775178))
@@ -76,6 +77,8 @@
 
 ### Build
 
+- *(github)* Semantic version action testing (#59) - ([363ae9a](https://github.com/orhun/git-cliff/commit/363ae9a8d11f11b1e545f3aa47ecc0d2fc0af30f))
+- *(github)* Semantic version action testing - ([8e72047](https://github.com/orhun/git-cliff/commit/8e7204775ee7f5e4a8d0597cc34e90b6b255d7c2))
 - *(github)* Fix for semantic version actions (#58) - ([d234da5](https://github.com/orhun/git-cliff/commit/d234da5c2e1c403d458a12d1e2491e241bd2de8c))
 - *(github)* Fix for semantic version actions - ([d9ad7f7](https://github.com/orhun/git-cliff/commit/d9ad7f7fe59eaf27a1cc030962c9baa3aca25c3d))
 - *(github)* Semantic version action changed (#57) - ([0bea97c](https://github.com/orhun/git-cliff/commit/0bea97cf59d8c62270f794f41f2f9a2222117281))
