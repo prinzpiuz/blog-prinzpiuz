@@ -16,13 +16,7 @@
         </div>
         <article>
             {{ .Content }}
-            {{ if .Params.changelog }}
-                <hr>
-                <b>Changelog</b></br>
-                {{ with .GitInfo }}
-                    {{ .CommitDate.Format "2006-01-02" }}: {{ .Subject }}
-                {{ end }}
-            {{ end }}
+            {{ partial "changelog.html" . }}
         </article>
         {{ if .Params.clappy }}
         {{ partial "clappy.html" . }}

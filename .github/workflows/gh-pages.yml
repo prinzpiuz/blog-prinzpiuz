@@ -22,6 +22,10 @@ jobs:
         with:
           hugo-version: "${{ vars.HUGO_VERSION }}"
 
+      #this step to get all the commit subjects of uses/index.md specific file
+      - name: Setup Hugo Last Commit
+        run: 'export HUGOxPARAMSxGITxLAST_COMMITxSUBJECT=$(git log --follow --format="%as: %s," -- content/uses/index.md)'
+
       - name: Build
         run: hugo
 
