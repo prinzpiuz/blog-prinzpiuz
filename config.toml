@@ -4,6 +4,7 @@ title = "prinzpiuz"
 relativeURLs = true
 enableEmoji = true
 enableRobotsTXT = true
+enableGitInfo = true
 copyright = "&copy; Copyright 2024, prinzpiuz"
 # Main menu items
 [menu]
@@ -20,10 +21,10 @@ copyright = "&copy; Copyright 2024, prinzpiuz"
     url = "/post/"
     weight = -100
   [[menu.main]]
-    identifier = "categories"
-    name = "Categories"
-    title = "Categories"
-    url = "/categories/"
+    identifier = "uses"
+    name = "/Uses"
+    title = "/Uses"
+    url = "/uses/"
     weight = -90
   [[menu.main]]
     identifier = "projects"
@@ -37,7 +38,7 @@ copyright = "&copy; Copyright 2024, prinzpiuz"
   version="1.16.0"
   opengraph_io_api_key = "65b682c0-f713-473b-b75a-30e7eda27791"
   header_title = "PrinzPiuz"
-  header_subtitle = "Software Engineer | Ziff Davis | Cochin" # Your header subtitle
+  header_subtitle = "Software Engineer | Nuventure | Cochin"
   home_image = "/images/avatar.jpeg"
   recent_posts = 5
   mainSections = ["posts", "post", "blog"]

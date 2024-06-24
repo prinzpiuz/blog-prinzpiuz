@@ -1,25 +1,25 @@
 <div class="pl-sm-4 ml-sm-5 pt-2">
   <div class="row">
     <div class="col-12">
-      <h5>
-        <span class="badge category text-capitalize"> Posts </span>
-      </h5>
       <div class="pb-3">
-        <ul class="list-unstyled">
-          {{ range .Site.RegularPages }} {{if not (in .Title "About")}}
-          <li>
-            {{ .Date.Format "Jan-02-06" }}
-            {{ if in .Permalink "movies" }}
-                🎥 Review:
+        {{ range .Site.RegularPages.GroupByDate "2006" }}
+        <h5>
+          <span class="badge category text-capitalize"> {{ .Key }}</span>
+        </h5>
+        <ul>
+          {{ range .Pages }}
+            {{ if not (in .Permalink "reviews") }}
+            {{if not (in .Permalink "projects")}}
+            {{if not (in .Title "About")}}
+              <li>
+                {{ .Date.Format "Jan-01" }}  <a href="{{ .RelPermalink }}">{{ .Title }}</a>  {{ partial "reading-time.html" . }}
+              </li>
             {{ end }}
-            {{ if in .Permalink "books" }}
-                📚 Review:
             {{ end }}
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-            {{ partial "reading-time.html" . }}
-          </li>
-          {{ end }} {{ end }}
+            {{ end }}
+          {{ end }}
         </ul>
+        {{ end }}
       </div>
     </div>
   </div>

@@ -13,7 +13,7 @@
                 {{ if in .Permalink "books" }}
                     📚 Review:
                 {{ end }}
-                <a href="{{ .URL | relURL }}">
+                <a href="{{ .RelPermalink | relURL }}">
                     {{ if .Draft }}DRAFT: {{end}}{{ .Title }}
                 </a>
                 {{ partial "reading-time.html" . }}

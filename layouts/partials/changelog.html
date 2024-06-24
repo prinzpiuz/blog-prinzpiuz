@@ -1,0 +1,11 @@
+<!-- https://github.com/gohugoio/hugo/issues/9738 -->
+<!-- export HUGOxPARAMSxGITxLAST_COMMITxSUBJECT=$(git log --follow --format="%as: %s," -- content/uses/index.md) -->
+{{ if .Params.changelog }}
+    <hr>
+    <b>Changelog</b></br>
+    {{ with site.Params.git.last_commit }}
+        {{ range split .Subject "," }}
+            {{ . }}</br>
+        {{ end }}
+    {{ end }}
+{{ end }}
