@@ -24,7 +24,7 @@ jobs:
 
       #this step to get all the commit subjects of uses/index.md specific file
       - name: Setup Hugo Last Commit
-        run: 'export HUGOxPARAMSxGITxLAST_COMMITxSUBJECT=$(git log --follow --format="%as: %s," -- content/uses/index.md)'
+        run: source env.sh
 
       - name: Build
         run: hugo
