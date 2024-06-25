@@ -23,11 +23,8 @@ jobs:
           hugo-version: "${{ vars.HUGO_VERSION }}"
 
       #this step to get all the commit subjects of uses/index.md specific file
-      - name: Setup Hugo Last Commit
-        run: source env.sh
-
-      - name: Build
-        run: hugo
+      - name: Setup Hugo Last Commit And Build
+        run: source env.sh && hugo
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
