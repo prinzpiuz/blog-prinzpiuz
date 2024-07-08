@@ -1,0 +1,38 @@
+<div class="timeline__item">
+  <div class="timeline__item-header">
+    <button
+      class="timeline__arrow"
+      type="button"
+      id="item{{ (.Get 0) }}"
+      aria-labelledby="item{{ (.Get 0) }}-name"
+      aria-expanded="false"
+      aria-controls="item{{ (.Get 0) }}-ctrld"
+      aria-haspopup="true"
+      data-item="{{ (.Get 0) }}"
+    >
+      <svg
+        class="timeline__arrow-icon"
+        viewBox="0 0 24 24"
+        width="24px"
+        height="24px"
+      >
+        <use href="#arrow" />
+      </svg>
+    </button>
+    <span class="timeline__dot"></span>
+    <span id="item{{ (.Get 0) }}-name" class="timeline__meta">
+      <strong class="timeline__title">{{ (.Get 1) | markdownify }}</strong>
+    </span>
+  </div>
+  <div
+    class="timeline__item-body"
+    id="item{{ (.Get 0) }}-ctrld"
+    role="region"
+    aria-labelledby="item{{ (.Get 0) }}"
+    aria-hidden="true"
+  >
+    <div class="timeline__item-body-content">
+      <p class="timeline__item-p">{{ .Inner | markdownify }}</p>
+    </div>
+  </div>
+</div>
