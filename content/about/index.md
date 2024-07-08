@@ -6,7 +6,7 @@ draft: false
 
 ## Me
 
-Hi, I am prinzpiuz, I believe in [#FreeAsInFreedom](https://en.wikipedia.org/wiki/Free_as_in_Freedom) in every aspect.  
+Hi, I am prinzpiuz. I consider myself to be an atheist and a freethinker who puts trust and hope in science.
 Currently, I'm living in [Varapuzha🏝️](https://en.wikipedia.org/wiki/Varappuzha) | [Kochi](https://en.wikipedia.org/wiki/Ernakulam_district) | [Kerala](https://en.wikipedia.org/wiki/Kerala) | [India](https://en.wikipedia.org/wiki/India)  
 I'm a software engineer, currently working for [Nuventure Connect](https://nuventureconnect.com/).
 
