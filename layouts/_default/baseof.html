@@ -33,6 +33,14 @@
     {{ if in .Permalink "reviews" }}
       <script src="{{ .Site.BaseURL }}js/rating.js"></script>
     {{ end }}
+    {{ if in .Permalink "uses" }}
+     <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ .Site.BaseURL }}css/collapsible.css"
+      />
+      <script src="{{ .Site.BaseURL }}js/collapsible.js"></script>
+    {{ end }}
     {{- partial "footer.html" . -}}
   </body>
 </html>
