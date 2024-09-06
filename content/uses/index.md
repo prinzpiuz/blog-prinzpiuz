@@ -29,9 +29,10 @@ I currently have three powerful machines:
             I am self-hosting some services in it like Jellyfin, Deluge,
             Calibre, Sonarr, Radarr, Jacket ...etc. more about it can be read here
             [Things I Self Hosting](/post/things-i-self-hosting/)  
+            Recently I changed my server setup to a more organized one, Currently I am running every application via docker, this seems pretty easy. [Here](https://github.com/prinzpiuz/Druv-Setup) is the setup repo
   - CPU: Intel i3-2100 (4) @ 3.100GHz
-  - RAM: 2 GB
-  - OS: Debian 10 (buster)
+  - RAM: 10 GB
+  - OS: Debian 12 (bookworm)
   - Storage: 500 GB HDD
   - More [Neofetch Output](/images/uses/media_server_neofetch.png)
 - **My Personal Machine**: This is the first laptop I bought, which helped me a lot during my college days.
@@ -199,6 +200,7 @@ I currently have three powerful machines:
 - [My Dotfiles](https://github.com/prinzpiuz/dotfiles)  
 - [System Setup WIKI](https://github.com/prinzpiuz/dotfiles/wiki/System%E2%80%90configuration)
 - [System Scripts](https://github.com/prinzpiuz/System-Scripts)
+- [Media Server Setup](https://github.com/prinzpiuz/Druv-Setup)
 - {{< simple_more "code_extensions" "**VS Code Extensions I am Using**" >}}
   - Better Comments
   - Codesnap
