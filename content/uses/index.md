@@ -29,9 +29,10 @@ I currently have three powerful machines:
             I am self-hosting some services in it like Jellyfin, Deluge,
             Calibre, Sonarr, Radarr, Jacket ...etc. more about it can be read here
             [Things I Self Hosting](/post/things-i-self-hosting/)  
+            Recently I changed my server setup to a more organized one, Currently I am running every application via docker, this seems pretty easy. [Here](https://github.com/prinzpiuz/Druv-Setup) is the setup repo
   - CPU: Intel i3-2100 (4) @ 3.100GHz
-  - RAM: 2 GB
-  - OS: Debian 10 (buster)
+  - RAM: 10 GB
+  - OS: Debian 12 (bookworm)
   - Storage: 500 GB HDD
   - More [Neofetch Output](/images/uses/media_server_neofetch.png)
 - **My Personal Machine**: This is the first laptop I bought, which helped me a lot during my college days.
@@ -63,9 +64,11 @@ I currently have three powerful machines:
     - Logitech MK215 Wireless Keyboard and Mouse Combo
 - **🖯 Mouse**: [Logitech Signature M650](https://www.logitech.com/en-in/products/mice/m650-signature-wireless-mouse.html)
 - **🎤 MIC**: [MAONO AU-903 Portable USB Microphone](https://www.maono.com/products/maono-pd100u-dynamic-usb-microphone?_pos=13&_fid=bb9d87ea3&_ss=c)
-- **🎧 Headset**: [One Plus Bro](https://www.oneplus.in/product/oneplus-buds-pro)
+- **🎧 HeadPhone**: [Sennheiser ACCENTUM Plus](https://www.sennheiser-hearing.com/en-IN/p/accentum-plus-wireless/)
   - **Previous Ones**:
+    - One Plus Bro
     - JBL Tune 215BT
+- **HeadPhone Stand**: [Hoss® Headphone Stand](https://www.amazon.in/gp/product/B0CV14GBTS/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1)
 - **💾 Storage**:
   - For Backups: [Western Digital WD 1 TB](https://www.westerndigital.com/en-in/products/portable-drives/wd-my-passport-usb-3-0-hdd)
   - For [Ventoy](https://www.ventoy.net/en/index.html): [SanDisk ® Ultra Curve USB 3.2 64 GB](https://www.westerndigital.com/en-in/products/usb-flash-drives/sandisk-ultra-curve-3-2)
@@ -145,9 +148,9 @@ I currently have three powerful machines:
     - Samsung Ch@t222
 - **Application Repositories**: [Play Store](https://play.google.com/store/games?hl=en), [F-Droid](https://f-droid.org/)
   - **Notable Apps**
-    - Black: For Managing Torrents, Sonarr And Radarr
+    - nzb360: For Managing Torrents, Sonarr And Radarr
     - Bitwarden: For Password Management
-    - Deluge Client: For Managing Torrents Media Server
+    - Qbit Client: For Managing Torrents In Media Server
     - Libre Torrent: Torrents in Phone
     - Olam: Malayalam To English Dictionary
     - Indic Keyboard: Indian Language Typing
@@ -173,7 +176,8 @@ I currently have three powerful machines:
 - **Hosting**: [Netlify](https://www.netlify.com/), [GitHub Pages](https://pages.github.com/)
 - **Domains**: [GoDaddy](https://www.godaddy.com/en-in)
 - **Investments 📈**: [Zerodha](https://zerodha.com/)
-- **VPN**: [Tailscale](https://tailscale.com/)
+- **VPN**: [Tailscale](https://tailscale.com/) for mesh connectivity
+- **VPN Protocol**: [WireGuard](https://www.wireguard.com/)
 - **Feed Reader**: [Feedly](https://feedly.com/)
 - **Bookmarks Manager**: [Raindrop.io](https://raindrop.io/)
 - **Tech News, Blogs**: [Lobster](https://lobste.rs/) (Mostly), [Hackernews](https://news.ycombinator.com/)
@@ -199,6 +203,7 @@ I currently have three powerful machines:
 - [My Dotfiles](https://github.com/prinzpiuz/dotfiles)  
 - [System Setup WIKI](https://github.com/prinzpiuz/dotfiles/wiki/System%E2%80%90configuration)
 - [System Scripts](https://github.com/prinzpiuz/System-Scripts)
+- [Media Server Setup](https://github.com/prinzpiuz/Druv-Setup)
 - {{< simple_more "code_extensions" "**VS Code Extensions I am Using**" >}}
   - Better Comments
   - Codesnap
