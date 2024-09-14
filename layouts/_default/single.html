@@ -1,5 +1,6 @@
 {{ define "main" }}
     <div class="pl-sm-2">
+        {{if not (in .Title "About")}}
         <div class="mb-3">
             <h3 class="mb-0">{{ .Title }}</h3>
             {{ if .Params.Subtitle }}
@@ -14,6 +15,7 @@
                 </br><small class="text-muted">This page was last modified on {{ .Lastmod | time.Format ":date_medium" }}</small>
             {{ end }}
         </div>
+        {{ end }}
         <article>
             {{ .Content }}
             {{ partial "changelog.html" . }}
