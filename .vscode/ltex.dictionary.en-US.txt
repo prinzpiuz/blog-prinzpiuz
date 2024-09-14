@@ -126,3 +126,6 @@ Pydantic
 Pytest
 Subdl
 Trakt
+Qbit
+ACCENTUM
+ACCENTUM
