@@ -16523,3 +16523,24 @@ a {
         clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
     }
 }
+
+
+.fa-rss:hover {
+    color: rgb(255, 124, 51) !important;
+}
+
+.fa-github:hover {
+    color: #000 !important;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2 !important;
+}
+
+.fa-mastodon:hover {
+    color: #6364ff !important;
+}
+
+.fa-images:hover {
+    color: #007bff !important;
+}
