@@ -16467,3 +16467,59 @@ a {
 .rating{
   display: inline;
 }
+
+
+/* 404 page animation */
+.contain {
+    @media (min-width: 1366px) {
+            height: 650px;
+            width: 400px;
+            left: 52%;
+            top: 75%;
+            position: absolute;
+            transform: translatex(-50%) translatey(-50%);
+        }
+    @media (max-width: 600px) {
+            height: 250px;
+            width: 400px;
+            left: 65%;
+            top: 60%;
+            position: absolute;
+            transform: translatex(-50%) translatey(-50%);
+        }
+
+    svg {
+        vertical-align: top;
+        width: 100%;
+
+        .beer {
+            animation-name: empty;
+            animation-fill-mode: forwards;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            fill: #F9CF68;
+        }
+    }
+}
+
+@keyframes empty {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    30% {
+        clip-path: polygon(0 16%, 100% 12%, 100% 100%, 0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0 40%, 100% 44%, 100% 100%, 0% 100%);
+    }
+
+    70% {
+        clip-path: polygon(0 69%, 100% 66%, 100% 100%, 0% 100%);
+    }
+
+    100% {
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+}

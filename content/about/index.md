@@ -6,7 +6,7 @@ draft: false
 
 ## 👋🏽 Hello
 
-Hi, I'm Prince, you might know me as `@prinzpiuz` on various internet platforms of the internet.  
+Hi, I'm Prince, you might know me as `@prinzpiuz` on various corners of the internet.  
 I consider myself to be an atheist and a freethinker who puts trust and hope in science.  
 Currently, I'm living in [Varapuzha🏝️](https://en.wikipedia.org/wiki/Varappuzha) | [Kochi](https://en.wikipedia.org/wiki/Ernakulam_district) | [Kerala](https://en.wikipedia.org/wiki/Kerala) | [India](https://en.wikipedia.org/wiki/India)  
 I'm a software engineer, currently working for [Nuventure Connect](https://nuventureconnect.com/).
