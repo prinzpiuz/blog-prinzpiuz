@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.5] - 2024-09-15
+## [2.0.6] - 2024-09-15
 
 ### ⛰️  Features
 
@@ -19,6 +19,8 @@
 - *(reviews)* Modified layout for writing film reviews - ([e7d857d](https://github.com/orhun/git-cliff/commit/e7d857d66d7390db6d3453604987ef2e9cca7ed7))
 - *(rss feed)* RSS Icon Added (#69) - ([fba0555](https://github.com/orhun/git-cliff/commit/fba0555027d319fd34cbfa2925e97a20507e3b86))
 - *(rss feed)* RSS Icon Added - ([303bb90](https://github.com/orhun/git-cliff/commit/303bb90cf2b25eb6f7564f2182e96290297187d2))
+- *(social icons)* Added theme color on hover for social icons (#73) - ([0fa7ea7](https://github.com/orhun/git-cliff/commit/0fa7ea76a2746873680550c96c88c0f3ce5e76d1))
+- *(social icons)* Added theme color on hover for social icons - ([05e13a2](https://github.com/orhun/git-cliff/commit/05e13a2be169c418bc1d98d73e6abd1871c372f7))
 - *(uses)* #major, custom command to get list commits from git log (#61) - ([b62b00c](https://github.com/orhun/git-cliff/commit/b62b00c0b43edeebcf928dd88e19b112f86b28d2))
 - *(uses)* #major, custom command to get list commits from git log - ([5eecfe5](https://github.com/orhun/git-cliff/commit/5eecfe5f5a5d0d53d877c5267a7254a9342958d6))
 - *(uses)* Added functionality to fetch full changelog for the uses page - ([e1df9f3](https://github.com/orhun/git-cliff/commit/e1df9f33c914179f0a80a36eaba0dd83f31a09af))
@@ -58,6 +60,7 @@
 - *(content correction)* Corrections - ([9fc1931](https://github.com/orhun/git-cliff/commit/9fc19313d9d191b651187768193ff79a48883188))
 - *(content correction)* Corrections in latest post, broken link fixes (#48) - ([ae41791](https://github.com/orhun/git-cliff/commit/ae417912447ce2e8567aba1eb6bfc8f2cca1bb47))
 - *(content correction)* Corrections in latest post, broken link fixes - ([e16ed54](https://github.com/orhun/git-cliff/commit/e16ed54473ecf00e9b42f0157f476b18282e6072))
+- *(generated)* Changelog generated & version updated automatically - ([39acf6b](https://github.com/orhun/git-cliff/commit/39acf6b685b2560274818fe638a26ff86152eb30))
 - *(generated)* Changelog generated & version updated automatically - ([384b19a](https://github.com/orhun/git-cliff/commit/384b19afb852c5d310b1984bd01af8ade4110ab7))
 - *(generated)* Changelog generated & version updated automatically - ([68bee91](https://github.com/orhun/git-cliff/commit/68bee911566b54cfc40a5ef6115fe034de00e866))
 - *(generated)* Changelog generated & version updated automatically - ([e1e6c0e](https://github.com/orhun/git-cliff/commit/e1e6c0e05b7edeb6a88ff181a2366f19cef66f44))
