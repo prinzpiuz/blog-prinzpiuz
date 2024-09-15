@@ -1,9 +1,11 @@
 # Changelog
 
-## [2.0.4] - 2024-09-14
+## [2.0.5] - 2024-09-15
 
 ### ⛰️  Features
 
+- *(404)* 404 page updated (#71) - ([9e6da5a](https://github.com/orhun/git-cliff/commit/9e6da5a7653de2c9b2e7f217b0a99b1c17ad2186))
+- *(404)* 404 page updated - ([70248f1](https://github.com/orhun/git-cliff/commit/70248f1d15d57ead275a90721eafb565da39c029))
 - *(footer)* Not by AI added at footer - ([164922d](https://github.com/orhun/git-cliff/commit/164922dcb26fc359266fb4e8c7c4a07cebd6490b))
 - *(footer)* Showing version on footer - ([061e0f3](https://github.com/orhun/git-cliff/commit/061e0f37e801c102c9f94cac7537ea10534b4f82))
 - *(front page)* Redesigned front page, Now grouping based on year - ([ceebbdb](https://github.com/orhun/git-cliff/commit/ceebbdbfe6ce25a04b764b876d095d18e601a473))
@@ -56,6 +58,7 @@
 - *(content correction)* Corrections - ([9fc1931](https://github.com/orhun/git-cliff/commit/9fc19313d9d191b651187768193ff79a48883188))
 - *(content correction)* Corrections in latest post, broken link fixes (#48) - ([ae41791](https://github.com/orhun/git-cliff/commit/ae417912447ce2e8567aba1eb6bfc8f2cca1bb47))
 - *(content correction)* Corrections in latest post, broken link fixes - ([e16ed54](https://github.com/orhun/git-cliff/commit/e16ed54473ecf00e9b42f0157f476b18282e6072))
+- *(generated)* Changelog generated & version updated automatically - ([384b19a](https://github.com/orhun/git-cliff/commit/384b19afb852c5d310b1984bd01af8ade4110ab7))
 - *(generated)* Changelog generated & version updated automatically - ([68bee91](https://github.com/orhun/git-cliff/commit/68bee911566b54cfc40a5ef6115fe034de00e866))
 - *(generated)* Changelog generated & version updated automatically - ([e1e6c0e](https://github.com/orhun/git-cliff/commit/e1e6c0e05b7edeb6a88ff181a2366f19cef66f44))
 - *(generated)* Changelog generated & version updated automatically - ([8d84928](https://github.com/orhun/git-cliff/commit/8d84928d75eeac648533f11e7dc853f8a075e9fd))
