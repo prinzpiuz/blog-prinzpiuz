@@ -129,3 +129,10 @@ Trakt
 Qbit
 ACCENTUM
 ACCENTUM
+Restic
+restic
+URBackup
+MullVad
+deduplication
+systemd
+tada
