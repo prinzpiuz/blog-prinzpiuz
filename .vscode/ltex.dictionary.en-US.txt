@@ -136,3 +136,5 @@ MullVad
 deduplication
 systemd
 tada
+yml
+XDG

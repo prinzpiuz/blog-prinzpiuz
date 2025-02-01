@@ -8,9 +8,9 @@ audio: false
 modified_date: false
 ---
 
-This blog post continues the discussion on my backup strategies. If you haven't read the previous post, please check it out here.  
+This blog post continues the discussion on my backup strategies. If you haven't read the previous post, please check it out [here](/post/my_backup_strategies/).  
 
-Currently, all the machines I am using run on Linux, so this post will focus on how I use Restic for Linux systems.  
+Currently, all the machines I am using run on Linux, so this post will focus on How I use Restic for Linux systems.  
 
 **Experiences With System Backups**  
 
@@ -68,7 +68,7 @@ I Initially started with Restic Binary, and it was little difficult to call rest
 
 _**Note: This example is for taking full system backup using `SFTP`. And This is tested on Debian based systems.**_
 
-1. Install Restic  
+1. **Install Restic**  
 
     I used the following command to install restic on my workstation and personal machine. To get the latest version I am building it from the source.  
 
@@ -94,7 +94,7 @@ _**Note: This example is for taking full system backup using `SFTP`. And This is
         restic 0.17.1 compiled with go1.22.0 on linux/amd64
         ```
 
-2. Install Restic Profile
+2. **Install Restic Profile**
 
     To Build From Source, We need Go, Git and Make installed.
 
@@ -126,11 +126,11 @@ _**Note: This example is for taking full system backup using `SFTP`. And This is
 
     Now We have restic and restic profile installed. Let's create a Location for our backup.
 
-3. Create Backup Location
+3. **Create Backup Location**
 
     I am using a network attached storage as my central repository. So I created a directory on my NAS and enabled SSH access to it, Key based authentication is enabled. If You want a separate user for restic, and you can follow this guide [here](https://restic.readthedocs.io/en/latest/080_examples.html#backing-up-your-system-without-running-restic-as-root)
 
-4. Create Restic Profile Configuration
+4. **Create Restic Profile Configuration**
 
     You can create a restic profile configuration file in different formats like YAML, JSON, HCL and TOML. I am using TOML format.
     Also, I am managing my restic profile configuration in a git repository using [Chezmoi](https://www.chezmoi.io/). Directory structure of my restic profile configuration is as follows.
@@ -185,7 +185,7 @@ _**Note: This example is for taking full system backup using `SFTP`. And This is
 
     Now we have restic and restic profile installed and a restic profile configuration file created. Let's create a backup.
 
-5. Initialize Restic Repository
+5. **Initialize Restic Repository**
 
     To initialize a restic repository, we need to run the following command
 
@@ -224,7 +224,7 @@ _**Note: This example is for taking full system backup using `SFTP`. And This is
 
     Now we have a restic repository initialized. Let's create a backup.
 
-6. Test Backup
+6. **Test Backup**
 
     We can test the backup by running restic in dry mode, you can either dry from restic profile configuration using `--dry-run` or with the restic command directly.  
     I am using restic profile configuration file to do a dry run.
@@ -261,7 +261,7 @@ _**Note: This example is for taking full system backup using `SFTP`. And This is
 
     Since I have previously created a backup, it will show the previous backup as parent.
 
-7. Create a Backup
+7. **Create a Backup**
 
     Everything is working fine. Now we can create a backup.  
     To create a backup, we need to run the following command  
@@ -273,7 +273,7 @@ _**Note: This example is for taking full system backup using `SFTP`. And This is
     This command will run the backup with arguments specified in the restic profile default section.
     And will be taking little time  
 
-8. Scheduling Backup
+8. **Scheduling Backup**
 
     One of the main reasons I chose to use a restic profile is for scheduling my backups. I utilize `systemd` to automate this scheduling. Additionally, the restic profile supports various other options, which you can explore further [here](https://creativeprojects.github.io/resticprofile/schedules/index.html)  
 
@@ -291,7 +291,7 @@ _**Note: This example is for taking full system backup using `SFTP`. And This is
 
     This command will create [systemd/Timers](https://wiki.archlinux.org/title/Systemd/Timers) with arguments specified in the restic profile.
 
-9. Checking Backup
+9. **Checking Backup**
 
     To ensure your backup is functioning correctly, you need to check it regularly.  
     One way to do this is by listing the backups stored in the repository. You can use the following command to list the backups in the repository.
@@ -318,4 +318,113 @@ _**Note: This example is for taking full system backup using `SFTP`. And This is
  :tada: **You are now completely safe.** :tada:
 {{< /center >}}
 
-Now Coming to my docker backup strategy.
+***
+
+##### Docker Set Up
+
+Now coming to how I am using restic with docker set up  
+I am using Docker containers to host applications on my home server. The main issue I am facing is backing up my configuration files. I have set up a [script](https://github.com/prinzpiuz/Druv-Setup) to configure my server, so my primary concern is ensuring the safety of my config files.  
+Instead of performing a full system backup, I am focusing on backing up only my configuration files.
+
+{{< more yml "Here is the compose file" >}}
+restic:
+    image: mazzolino/restic
+    container_name: restic
+    hostname: restic_backup
+    environment:
+        - RUN_ON_STARTUP=true
+        - BACKUP_CRON=0 _/12 * * *
+        - RESTIC_REPOSITORY=${RESTIC_REPO}
+        - RESTIC_PASSWORD=${RESTIC_PASSWORD}
+        - RESTIC_BACKUP_SOURCES=/mnt/volumes
+        - RESTIC_COMPRESSION=auto
+        - RESTIC_BACKUP_ARGS=--tag media_server --exclude log._ --exclude _.log --exclude_.db --exclude logs --exclude _.db-shm --exclude_.db-wal --verbose
+        - RESTIC_FORGET_ARGS=--keep-last 10 --keep-daily 7 --keep-weekly 5 --keep-monthly 12
+        - TZ=Asia/Kolkata
+    volumes:
+        - /configs:/mnt/volumes:ro
+        - /home/druv/.ssh:/run/secrets/.ssh:ro
+    security_opt:
+        - no-new-privileges:true
+prune:
+    image: mazzolino/restic
+    container_name: restic_prune
+    hostname: restic_backup
+    restart: unless-stopped
+    environment:
+        - SKIP_INIT=true
+        - RUN_ON_STARTUP=true
+        - PRUNE_CRON=0 0 4 ***
+        - RESTIC_REPOSITORY=${RESTIC_REPO}
+        - RESTIC_PASSWORD=${RESTIC_PASSWORD}
+        - TZ=Asia/Kolkata
+    volumes:
+        - /home/druv/.ssh:/run/secrets/.ssh:ro
+check:
+    image: mazzolino/restic
+    container_name: restic_check
+    hostname: restic_backup
+    restart: unless-stopped
+    environment:
+        - SKIP_INIT=true
+        - RUN_ON_STARTUP=false
+        - CHECK_CRON=0 15 5***
+        - RESTIC_CHECK_ARGS=--read-data-subset=10%
+        - RESTIC_REPOSITORY=${RESTIC_REPO}
+        - RESTIC_PASSWORD=${RESTIC_PASSWORD}
+        - TZ=Asia/Kolkata
+    volumes:
+        - /home/druv/.ssh:/run/secrets/.ssh:ro
+{{< /more >}}
+
+***
+
+##### Monitoring Backups
+
+Imagine this situation: we have a complex backup setup, and one day we need to restore a backup from last month due to an emergency. However, the backups haven't been working correctly, leading to a crisis.
+
+Monitoring is a crucial aspect of any backup strategy. Regardless of how robust our setup is, if an error occurs and backups are not functioning properly, it can lead to disastrous consequences.
+
+I would like to introduce you to a tool called **[Backrest](https://github.com/garethgeorge/backrest)**. In my case, I use it to monitor whether backup schedules are running smoothly, to verify backups, and to prune old backups when storage space is limited.
+
+While Restic offers commands to check backup statuses, running these commands manually every day can be tedious. Backrest acts as a web-based user interface for Restic. Although it has the capability to schedule backups, I primarily use it as a monitoring tool to oversee backup schedules, review backup reports, and manage backups in case of an emergency.
+
+{{< more yml "Backrest Docker Setup I am Using" >}}
+backrest:
+    image: garethgeorge/backrest:latest
+    container_name: backrest
+    hostname: backrest
+    volumes:
+      - ./configs/backrest/data:/data
+      - ./configs/backrest/config:/config
+      - ./configs/backrest/cache:/cache
+      - /media/prinzpiuz/backups:/repos
+    environment:
+      - BACKREST_DATA=/data # path for backrest data. restic binary and the database are placed here.
+      - BACKREST_CONFIG=/config/config.json # path for the backrest config file.
+      - XDG_CACHE_HOME=/cache # path for the restic cache which greatly improves performance.
+      - TZ=Asia/Kolkata # set the timezone for the container, used as the timezone for cron jobs.
+    ports:
+      - 9898:9898
+    restart: unless-stopped
+    network_mode: host
+{{< /more >}}
+
+***
+
+**Here are some helpful resources for further research**
+
+- The 3-2-1 Backup Strategy
+  - <https://www.backblaze.com/blog/the-3-2-1-backup-strategy/>
+- Restic Reddit
+  - <https://www.reddit.com/r/restic/>
+- Restic Forum
+  - <https://forum.restic.net/>
+- Awesome Restic
+  - <https://github.com/rubiojr/awesome-restic>
+- My Home Server Set Up
+  - <https://github.com/prinzpiuz/Druv-Setup/tree/main>
+- My Restic and Restic Profile Setup
+  - <https://github.com/prinzpiuz/dotfiles/blob/linux/debian12/private_dot_config/resticprofile/profiles.conf>
+- Command alias I am using with restic
+  - <https://github.com/prinzpiuz/dotfiles/blob/linux/debian12/dot_zshrc#L224>

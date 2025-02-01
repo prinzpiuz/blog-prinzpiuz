@@ -53,3 +53,5 @@
 {"rule":"CAN_BACKUP","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q: Option to backup only one file system.\\E$"}
 {"rule":"CAN_BACKUP","sentence":"^\\QOne thing you need to notice is here that I am using \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q option to backup as single file system.\\E$"}
 {"rule":"SENT_START_CONJUNCTIVE_LINKING_ADVERB_COMMA","sentence":"^\\QAlso I have scheduled to check my backup every sunday at 03:30 AM.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q{{< more yml \"Backrest Docker Setup I am Using\" >}} backrest: image: garethgeorge/backrest:latest container_name: backrest hostname: backrest volumes: - ./configs/backrest/data:/data - ./configs/backrest/config:/config - ./configs/backrest/cache:/cache - /media/prinzpiuz/backups:/repos environment: - BACKREST_DATA=/data # path for backrest data.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qports: - 9898:9898 restart: unless-stopped network_mode: host {{< /more >}}\\E$"}
