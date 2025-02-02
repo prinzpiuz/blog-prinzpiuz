@@ -5,7 +5,7 @@ relativeURLs = true
 enableEmoji = true
 enableRobotsTXT = true
 enableGitInfo = true
-copyright = "© Copyright 2024, prinzpiuz"
+copyright = "© Copyright 2025, prinzpiuz"
 # Main menu items
 [menu]
   [[menu.main]]

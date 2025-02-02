@@ -171,12 +171,13 @@ I currently have three powerful machines:
   - [Twitter](https://x.com/prinzpiuz)  
   - [LinkedIn](https://www.linkedin.com/in/prince-thaliath-35583a167/)  
   - [Pixelfed](https://portfolio.pixelfed.social/prinzpiuz)
-  - [Instagram](https://www.instagram.com/prinzpiuz/)
   - [Reddit](https://www.reddit.com/user/prinzpiuz/)
 - **Hosting**: [Netlify](https://www.netlify.com/), [GitHub Pages](https://pages.github.com/)
 - **Domains**: [GoDaddy](https://www.godaddy.com/en-in)
 - **Investments 📈**: [Zerodha](https://zerodha.com/)
-- **VPN**: [Tailscale](https://tailscale.com/) for mesh connectivity
+- **VPN**:
+  - **[Tailscale](https://tailscale.com/)** for mesh connectivity
+  - **[MullVad](https://mullvad.net/en)** Free from mass surveillance and censorship
 - **VPN Protocol**: [WireGuard](https://www.wireguard.com/)
 - **Feed Reader**: [Feedly](https://feedly.com/)
 - **Bookmarks Manager**: [Raindrop.io](https://raindrop.io/)
