@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.7] - 2025-02-02
+## [2.0.8] - 2025-02-02
 
 ### ⛰️  Features
 
@@ -61,6 +61,7 @@
 - *(content correction)* Corrections - ([9fc1931](https://github.com/orhun/git-cliff/commit/9fc19313d9d191b651187768193ff79a48883188))
 - *(content correction)* Corrections in latest post, broken link fixes (#48) - ([ae41791](https://github.com/orhun/git-cliff/commit/ae417912447ce2e8567aba1eb6bfc8f2cca1bb47))
 - *(content correction)* Corrections in latest post, broken link fixes - ([e16ed54](https://github.com/orhun/git-cliff/commit/e16ed54473ecf00e9b42f0157f476b18282e6072))
+- *(generated)* Changelog generated & version updated automatically - ([4206e5e](https://github.com/orhun/git-cliff/commit/4206e5e9c46c96ec9b9cdf4dccc4afe78bc4e6a0))
 - *(generated)* Changelog generated & version updated automatically - ([f2cbaf2](https://github.com/orhun/git-cliff/commit/f2cbaf22f9e05797f4ea8f97b248510c48fa2b49))
 - *(generated)* Changelog generated & version updated automatically - ([39acf6b](https://github.com/orhun/git-cliff/commit/39acf6b685b2560274818fe638a26ff86152eb30))
 - *(generated)* Changelog generated & version updated automatically - ([384b19a](https://github.com/orhun/git-cliff/commit/384b19afb852c5d310b1984bd01af8ade4110ab7))
@@ -92,6 +93,7 @@
 - *(new post)* New post on backup strategies (#75) - ([b80eb59](https://github.com/orhun/git-cliff/commit/b80eb59d4cac5924d10532f6e4be1dc3434c3909))
 - *(new post)* Remaining parts of backup strategies blog - ([b0ab69a](https://github.com/orhun/git-cliff/commit/b0ab69a5fe0b61814ed93273e04b5ffdd9bb48ef))
 - *(new post)* New post on backup strategies - ([f1f48bc](https://github.com/orhun/git-cliff/commit/f1f48bc241bd0d8bc2f9f4fa3cb007eaba2cfacb))
+- *(release)* Release blog post - ([0efa2f8](https://github.com/orhun/git-cliff/commit/0efa2f8106968c8b833ed4bc27f131912f190c38))
 - Gitignore updated - ([d547585](https://github.com/orhun/git-cliff/commit/d547585a90f9bed035f5ccfdf8c81f901509a69a))
 - Changes in github action - ([2ebb571](https://github.com/orhun/git-cliff/commit/2ebb5713c51c56f9f99adc3169a17dd5c2afee0a))
 
