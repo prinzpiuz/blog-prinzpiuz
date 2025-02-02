@@ -69,3 +69,12 @@ Here are the strategies I have tried and currently use:
   - I rely on GitHub and GitLab for hosting code.  
 - **Docker & Machines**
   - I use a combination of tools to back up my machines. I use [Restic](https://github.com/restic/restic) for backing up my Linux machines. This is a little big topic, so I will write a separate blog post about it. You can read about it [here](/post/my_backup_strategies_part2).
+
+***
+
+**Here are some helpful resources for further research**
+
+- [Obsidian](https://obsidian.md/)
+- [Remotely Save](https://github.com/remotely-save/remotely-save)
+- [Chezmoi](https://github.com/twpayne/chezmoi)
+- [Restic](https://github.com/restic/restic)
