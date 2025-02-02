@@ -12,7 +12,7 @@
             {{if not (in .Permalink "projects")}}
             {{if not (in .Title "About")}}
               <li>
-                {{ .Date.Format "Jan-01" }}  <a href="{{ .RelPermalink }}">{{ .Title }}</a>  {{ partial "reading-time.html" . }}
+                {{ .Date.Format "Jan" }}  <a href="{{ .RelPermalink }}">{{ .Title }}</a>  {{ partial "reading-time.html" . }}
               </li>
             {{ end }}
             {{ end }}

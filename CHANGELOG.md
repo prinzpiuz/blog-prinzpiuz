@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.6] - 2024-09-15
+## [2.0.7] - 2025-02-02
 
 ### ⛰️  Features
 
@@ -55,11 +55,13 @@
 - *(action)* Bug in deploy action fixed - ([8bdcbf0](https://github.com/orhun/git-cliff/commit/8bdcbf07a78f4fd27950c6219aab551f69bfd3ac))
 - *(action)* Bug in github action fixed - ([3daeeda](https://github.com/orhun/git-cliff/commit/3daeeda786e01b4ca2255abce107bf163f2c5645))
 - *(action)* Bug in action file fixed - ([957ad13](https://github.com/orhun/git-cliff/commit/957ad137482275d3a456ff4719270e60a5427760))
+- *(blog)* Remaining part of backup strategies blog - ([689fab7](https://github.com/orhun/git-cliff/commit/689fab75e86f78fa7926884d7d4a8cc23edf717b))
 - *(content)* Content updates - ([a91c8dc](https://github.com/orhun/git-cliff/commit/a91c8dcf8e0b8f8e46f8888af576d350fb62515c))
 - *(content correction)* Corrections (#49) - ([f5ef52d](https://github.com/orhun/git-cliff/commit/f5ef52dce9ad13af3c92922e6601d4e2ac258187))
 - *(content correction)* Corrections - ([9fc1931](https://github.com/orhun/git-cliff/commit/9fc19313d9d191b651187768193ff79a48883188))
 - *(content correction)* Corrections in latest post, broken link fixes (#48) - ([ae41791](https://github.com/orhun/git-cliff/commit/ae417912447ce2e8567aba1eb6bfc8f2cca1bb47))
 - *(content correction)* Corrections in latest post, broken link fixes - ([e16ed54](https://github.com/orhun/git-cliff/commit/e16ed54473ecf00e9b42f0157f476b18282e6072))
+- *(generated)* Changelog generated & version updated automatically - ([f2cbaf2](https://github.com/orhun/git-cliff/commit/f2cbaf22f9e05797f4ea8f97b248510c48fa2b49))
 - *(generated)* Changelog generated & version updated automatically - ([39acf6b](https://github.com/orhun/git-cliff/commit/39acf6b685b2560274818fe638a26ff86152eb30))
 - *(generated)* Changelog generated & version updated automatically - ([384b19a](https://github.com/orhun/git-cliff/commit/384b19afb852c5d310b1984bd01af8ade4110ab7))
 - *(generated)* Changelog generated & version updated automatically - ([68bee91](https://github.com/orhun/git-cliff/commit/68bee911566b54cfc40a5ef6115fe034de00e866))
@@ -87,6 +89,9 @@
 - *(generated)* Changelog generated & version updated automatically - ([6f846df](https://github.com/orhun/git-cliff/commit/6f846df77dbfc56b3f5c4de1d14e9bde67f728a3))
 - *(github)* Semantic version generator changed - ([bdc3245](https://github.com/orhun/git-cliff/commit/bdc32459043d712dac007692de6cde504b371bde))
 - *(merge)* Merge - ([bec5d03](https://github.com/orhun/git-cliff/commit/bec5d03cbbabd16d30f69cd00154fd0521a1343e))
+- *(new post)* New post on backup strategies (#75) - ([b80eb59](https://github.com/orhun/git-cliff/commit/b80eb59d4cac5924d10532f6e4be1dc3434c3909))
+- *(new post)* Remaining parts of backup strategies blog - ([b0ab69a](https://github.com/orhun/git-cliff/commit/b0ab69a5fe0b61814ed93273e04b5ffdd9bb48ef))
+- *(new post)* New post on backup strategies - ([f1f48bc](https://github.com/orhun/git-cliff/commit/f1f48bc241bd0d8bc2f9f4fa3cb007eaba2cfacb))
 - Gitignore updated - ([d547585](https://github.com/orhun/git-cliff/commit/d547585a90f9bed035f5ccfdf8c81f901509a69a))
 - Changes in github action - ([2ebb571](https://github.com/orhun/git-cliff/commit/2ebb5713c51c56f9f99adc3169a17dd5c2afee0a))
 
