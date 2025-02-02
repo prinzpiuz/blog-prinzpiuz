@@ -1,7 +1,7 @@
 ---
 title: "System Backup With Restic"
 date: 2025-01-25T23:07:40+05:30
-draft: true
+draft: false
 categories: [backup, restic, backup-strategies, backup-strategies-for-linux]
 bloTils-like: false
 audio: false

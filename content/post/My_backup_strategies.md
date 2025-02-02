@@ -1,7 +1,7 @@
 ---
 title: "My Backup Strategies"
 date: 2025-01-25T20:06:15+05:30
-draft: true
+draft: false
 categories: [backup, restic, backup-strategies, backup-strategies-for-linux]
 bloTils-like: false
 audio: false
